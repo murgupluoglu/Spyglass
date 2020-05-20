@@ -15,11 +15,14 @@
 package com.linkedin.android.spyglass.sample.data.models;
 
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
+import com.linkedin.android.spyglass.mentions.MentionSpanConfig;
 import com.linkedin.android.spyglass.mentions.Mentionable;
 import com.linkedin.android.spyglass.sample.R;
 import com.linkedin.android.spyglass.sample.data.MentionsLoader;
@@ -64,6 +67,14 @@ public class City implements Mentionable {
         // Note: Cities do not support partial deletion
         // i.e. "San Francisco" -> DEL -> ""
         return MentionDeleteStyle.PARTIAL_NAME_DELETE;
+    }
+
+    @Nullable
+    @Override
+    public MentionSpanConfig getMentionSpanConfig() {
+        MentionSpanConfig.Builder builder = new MentionSpanConfig.Builder();
+        builder.setMentionTextColor(Color.BLACK);
+        return builder.build();
     }
 
     @Override

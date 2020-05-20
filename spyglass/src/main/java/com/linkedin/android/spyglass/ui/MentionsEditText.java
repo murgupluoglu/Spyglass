@@ -1006,7 +1006,7 @@ public class MentionsEditText extends EditText implements TokenSource {
 
     private void insertMentionInternal(@NonNull Mentionable mention, @NonNull Editable text, int start, int end) {
         // Insert the span into the editor
-        MentionSpan mentionSpan = mentionSpanFactory.createMentionSpan(mention, mentionSpanConfig);
+        MentionSpan mentionSpan = mentionSpanFactory.createMentionSpan(mention, (mention.getMentionSpanConfig() != null) ? mention.getMentionSpanConfig() : mentionSpanConfig);
         String name = mention.getSuggestiblePrimaryText();
 
         mBlockCompletion = true;

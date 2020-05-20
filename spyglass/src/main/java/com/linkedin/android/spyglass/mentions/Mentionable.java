@@ -15,6 +15,7 @@
 package com.linkedin.android.spyglass.mentions;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.linkedin.android.spyglass.suggestions.interfaces.Suggestible;
 import com.linkedin.android.spyglass.ui.MentionsEditText;
@@ -62,4 +63,11 @@ public interface Mentionable extends Suggestible {
     @NonNull
     MentionDeleteStyle getDeleteStyle();
 
+    /**
+     * Mention config for when mention being draw
+     * If its null default config will be used
+     * @return the user defined {@link MentionSpanConfig}
+     */
+    @Nullable
+    MentionSpanConfig getMentionSpanConfig();
 }

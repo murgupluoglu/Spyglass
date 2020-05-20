@@ -19,7 +19,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
+import com.linkedin.android.spyglass.mentions.MentionSpanConfig;
 import com.linkedin.android.spyglass.mentions.Mentionable;
 import com.linkedin.android.spyglass.sample.R;
 import com.linkedin.android.spyglass.sample.data.MentionsLoader;
@@ -87,6 +89,12 @@ public class Person implements Mentionable {
         // People support partial deletion
         // i.e. "John Doe" -> DEL -> "John" -> DEL -> ""
         return MentionDeleteStyle.PARTIAL_NAME_DELETE;
+    }
+
+    @Nullable
+    @Override
+    public MentionSpanConfig getMentionSpanConfig() {
+        return null;
     }
 
     @Override
