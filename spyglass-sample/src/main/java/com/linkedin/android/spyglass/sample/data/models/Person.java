@@ -15,6 +15,7 @@
 package com.linkedin.android.spyglass.sample.data.models;
 
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
@@ -94,6 +95,12 @@ public class Person implements Mentionable {
     @Nullable
     @Override
     public MentionSpanConfig getMentionSpanConfig() {
+        return null;
+    }
+
+    @Nullable
+    @Override
+    public Typeface getTypeFace() {
         return null;
     }
 

@@ -17,6 +17,7 @@ package com.linkedin.android.spyglass.ui;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.InputType;
@@ -533,6 +534,17 @@ public class RichEditorView extends RelativeLayout implements TextWatcher, Query
     public void setText(final @NonNull CharSequence text) {
         if (mMentionsEditText != null) {
             mMentionsEditText.setText(text);
+        }
+    }
+
+    /**
+     * Sets the typeface to use within the embedded {@link MentionsEditText}.
+     *
+     * @param typeface the typeface to use
+     */
+    public void setTypeFace(@NonNull Typeface typeface){
+        if (mMentionsEditText != null) {
+            mMentionsEditText.setTypeface(typeface);
         }
     }
 

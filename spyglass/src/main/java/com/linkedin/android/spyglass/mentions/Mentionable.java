@@ -14,6 +14,8 @@
 
 package com.linkedin.android.spyglass.mentions;
 
+import android.graphics.Typeface;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -70,4 +72,11 @@ public interface Mentionable extends Suggestible {
      */
     @Nullable
     MentionSpanConfig getMentionSpanConfig();
+
+    /**
+     * Mention typface for when mention being draw
+     * @return the user defined {@link Typeface}
+     */
+    @Nullable
+    Typeface getTypeFace();
 }
