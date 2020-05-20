@@ -27,13 +27,13 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.linkedin.android.spyglass.R;
@@ -545,6 +545,17 @@ public class RichEditorView extends RelativeLayout implements TextWatcher, Query
     public void setTypeFace(@NonNull Typeface typeface){
         if (mMentionsEditText != null) {
             mMentionsEditText.setTypeface(typeface);
+        }
+    }
+
+    /**
+     * Sets the background to use within the embedded {@link MentionsEditText}.
+     *
+     * @param resource the resource to use for EditText background
+     */
+    public void setBackgroundResource(@DrawableRes int resource){
+        if (mMentionsEditText != null) {
+            mMentionsEditText.setBackgroundResource(resource);
         }
     }
 
