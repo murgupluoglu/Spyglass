@@ -571,6 +571,17 @@ public class RichEditorView extends RelativeLayout implements TextWatcher, Query
     }
 
     /**
+     * Inserts a mention into the token being considered currently.
+     *
+     * @param mention {@link Mentionable} to insert a span for
+     */
+    public void insertMention(@NonNull Mentionable mention) {
+        if (mMentionsEditText != null) {
+            mMentionsEditText.insertMention(mention);
+        }
+    }
+
+    /**
      * Sets the input type of the embedded {@link MentionsEditText}.
      *
      * @param type the input type of the {@link MentionsEditText}

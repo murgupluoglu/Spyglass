@@ -23,11 +23,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
+
 import com.linkedin.android.spyglass.sample.R;
 import com.linkedin.android.spyglass.sample.data.models.City;
 import com.linkedin.android.spyglass.sample.data.models.Person;
@@ -80,6 +81,9 @@ public class MultiSourceMentions extends AppCompatActivity implements QueryToken
         citiesCheckBox.setOnCheckedChangeListener((buttonView, isChecked) -> updateSuggestions());
 
         updateSuggestions();
+
+        editor.setTypeFace(ResourcesCompat.getFont(this, R.font.neusanextstd_bold));
+        editor.setBackgroundResource(android.R.color.transparent);
     }
 
     private void updateSuggestions() {
