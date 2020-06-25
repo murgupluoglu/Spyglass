@@ -15,18 +15,18 @@
 package com.linkedin.android.spyglass.tokenization.impl;
 
 import android.text.Spanned;
+
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import com.linkedin.android.spyglass.BuildConfig;
+
 import com.linkedin.android.spyglass.mentions.MentionSpan;
 import com.linkedin.android.spyglass.mentions.TestMention;
 import com.linkedin.android.spyglass.ui.RichEditorView;
 import com.linkedin.android.spyglass.ui.wrappers.RichEditorFragment;
 import com.linkedin.android.utils.SpyglassRobolectricRunner;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.annotation.Config;
 
 import static com.linkedin.android.utils.SpyglassRobolectricRunner.startFragment;
 import static junit.framework.Assert.assertEquals;

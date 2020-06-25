@@ -14,17 +14,16 @@
 
 package com.linkedin.android.utils;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
-
-import org.junit.runners.model.InitializationError;
-import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import org.junit.runners.model.InitializationError;
+import org.robolectric.Robolectric;
+import org.robolectric.RobolectricTestRunner;
 
 public class SpyglassRobolectricRunner extends RobolectricTestRunner {
 

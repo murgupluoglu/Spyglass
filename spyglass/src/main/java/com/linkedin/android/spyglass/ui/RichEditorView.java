@@ -36,6 +36,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
 import com.linkedin.android.spyglass.R;
 import com.linkedin.android.spyglass.mentions.MentionSpan;
 import com.linkedin.android.spyglass.mentions.MentionSpanConfig;
@@ -57,7 +58,6 @@ import com.linkedin.android.spyglass.tokenization.interfaces.Tokenizer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Custom view for the RichEditor. Manages three subviews:
@@ -546,6 +546,28 @@ public class RichEditorView extends RelativeLayout implements TextWatcher, Query
     public void setTypeFace(@NonNull Typeface typeface){
         if (mMentionsEditText != null) {
             mMentionsEditText.setTypeface(typeface);
+        }
+    }
+
+    /**
+     * Sets the text size to use within the embedded {@link MentionsEditText}.
+     *
+     * @param textSize the EditText text size by SP
+     */
+    public void setTextSize(float textSize){
+        if (mMentionsEditText != null) {
+            mMentionsEditText.setTextSize(textSize);
+        }
+    }
+
+    /**
+     * Sets the text color to use within the embedded {@link MentionsEditText}.
+     *
+     * @param color the EditText text color
+     */
+    public void setTextColor(@ColorInt int color){
+        if (mMentionsEditText != null) {
+            mMentionsEditText.setTextColor(color);
         }
     }
 

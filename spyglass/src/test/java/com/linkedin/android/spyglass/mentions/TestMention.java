@@ -16,6 +16,7 @@ package com.linkedin.android.spyglass.mentions;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
 import androidx.annotation.NonNull;
 
 /**

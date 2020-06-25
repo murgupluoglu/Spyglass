@@ -14,8 +14,9 @@
 
 package com.linkedin.android.spyglass.tokenization.interfaces;
 
-import androidx.annotation.NonNull;
 import android.text.Spanned;
+
+import androidx.annotation.NonNull;
 
 /**
  * An interface representing a tokenizer. Similar to {@link android.widget.MultiAutoCompleteTextView.Tokenizer}, but

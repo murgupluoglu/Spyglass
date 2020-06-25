@@ -15,6 +15,7 @@
 package com.linkedin.android.spyglass.suggestions.interfaces;
 
 import androidx.annotation.NonNull;
+
 import com.linkedin.android.spyglass.suggestions.SuggestionsAdapter;
 import com.linkedin.android.spyglass.suggestions.SuggestionsResult;
 import com.linkedin.android.spyglass.tokenization.QueryToken;

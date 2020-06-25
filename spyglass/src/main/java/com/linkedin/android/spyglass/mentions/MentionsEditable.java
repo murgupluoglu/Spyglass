@@ -22,6 +22,7 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.CharacterStyle;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 

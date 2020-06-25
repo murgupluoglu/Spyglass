@@ -19,20 +19,19 @@ import android.text.Spanned;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.linkedin.android.spyglass.BuildConfig;
+
 import com.linkedin.android.spyglass.mentions.MentionSpan;
 import com.linkedin.android.spyglass.mentions.Mentionable;
 import com.linkedin.android.spyglass.mentions.TestMention;
 import com.linkedin.android.spyglass.suggestions.SuggestionsResult;
-import com.linkedin.android.spyglass.suggestions.interfaces.Suggestible;
 import com.linkedin.android.spyglass.tokenization.QueryToken;
 import com.linkedin.android.spyglass.ui.wrappers.RichEditorFragment;
 import com.linkedin.android.utils.SpyglassRobolectricRunner;
 import com.linkedin.android.utils.TestUtils;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.List;

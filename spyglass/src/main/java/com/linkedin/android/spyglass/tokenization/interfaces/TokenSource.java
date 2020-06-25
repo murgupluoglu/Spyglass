@@ -16,6 +16,7 @@ package com.linkedin.android.spyglass.tokenization.interfaces;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
 import com.linkedin.android.spyglass.tokenization.QueryToken;
 
 /**

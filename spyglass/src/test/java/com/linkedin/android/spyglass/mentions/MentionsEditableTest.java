@@ -20,13 +20,11 @@ import android.text.style.SuggestionSpan;
 
 import androidx.test.core.app.ApplicationProvider;
 
-import com.linkedin.android.spyglass.BuildConfig;
 import com.linkedin.android.utils.SpyglassRobolectricRunner;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import static junit.framework.Assert.assertEquals;
 

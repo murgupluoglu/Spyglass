@@ -14,7 +14,6 @@
 
 package com.linkedin.android.spyglass.suggestions;
 
-import com.linkedin.android.spyglass.BuildConfig;
 import com.linkedin.android.spyglass.mentions.TestMention;
 import com.linkedin.android.spyglass.suggestions.interfaces.Suggestible;
 import com.linkedin.android.spyglass.tokenization.QueryToken;
@@ -27,7 +26,6 @@ import com.linkedin.android.utils.TestUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.Arrays;

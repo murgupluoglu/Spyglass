@@ -15,6 +15,7 @@
 package com.linkedin.android.spyglass.mentions;
 
 import android.graphics.Color;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 

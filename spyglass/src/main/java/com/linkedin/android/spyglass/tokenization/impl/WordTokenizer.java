@@ -18,7 +18,9 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.widget.EditText;
+
 import androidx.annotation.NonNull;
+
 import com.linkedin.android.spyglass.mentions.MentionSpan;
 import com.linkedin.android.spyglass.tokenization.interfaces.Tokenizer;
 
