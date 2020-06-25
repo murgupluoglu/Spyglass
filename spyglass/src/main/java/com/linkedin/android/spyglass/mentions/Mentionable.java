@@ -55,7 +55,7 @@ public interface Mentionable extends Suggestible {
      * @return the current text to display to the user
      */
     @NonNull
-    String getTextForDisplayMode(MentionDisplayMode mode);
+    String getTextForDisplayMode(@NonNull MentionDisplayMode mode);
 
     /**
      * Determines how the mention should be handled by a MentionSpan as it is being deleted.
